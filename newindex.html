@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!--<h1 class="slide-in-left">LURA</h1>-->
+    <img class="logo" src="Vector.png" alt="">
+    <div class="main-container">
+        <textarea class="text" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui..."></textarea>
+        <div class="advert">
+            <img src="exclamation.png" alt="">
+            <p class="adv">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="buttons">
+            <button class="primary-button" onclick="botonEncriptar()">Encriptar</button>
+            <button class="secondary-button" onclick="botonDesencriptar()">Desencriptar</button>
+        </div>
+        <div class="message">
+            <p class="load">Esperando mensaje...</p>
+            <div class="loader"></div>
+            <textarea class="encText" name="" id="" cols="30" rows="10" readonly></textarea>
+            <button class="copy" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        
+    </footer>
+</body>
+</html>
