@@ -161,10 +161,6 @@ button:active {
     margin: 24px;
 }
 
-.copy:active::after {
-    content: "Copiado";
-    transition: all 600ms; 
-}    
 @media (max-width: 767px) {
 
 }
