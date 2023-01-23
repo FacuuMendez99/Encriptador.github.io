@@ -148,7 +148,6 @@ button:active {
     margin: 24px;
     background-color: var(--soft-black);
     border: none;
-    text-transform: uppercase;
     color: var(--cyan-neon);
     text-align: center;
     resize: none;

@@ -7,12 +7,16 @@ const copyB = document.querySelector(".copy")
 
 
 function botonEncriptar() {
+    if (hayMinuscula(inputTexto) == true && hayAcentos(inputTexto) == false ) {
     let textoEncriptado = encriptar(inputTexto.value)
     mensaje.value = textoEncriptado;
     loader.classList.add("hide")
     load.classList.add("hide")
     mensaje.classList.add("show")
     copyB.classList.add("show")
+    } else {
+        alert("Solo letras minúsculas y sin acentos")
+}
 }
 
 function botonDesencriptar(){
@@ -47,6 +51,23 @@ function desencriptar(palabra) {
     nueva = nueva.replace(/ober/g,"o")
     nueva = nueva.replace(/ufat/g,"u")
     return nueva
+}
+
+function hayMinuscula(palabra) {
+    var original = palabra.value;
+    var originalMinuscula = palabra.value.toLowerCase();
+    return original === originalMinuscula;
+}
+
+function hayAcentos(palabra) {
+    let acentos = ["á","é","í","ó","ú"]
+    let texto = palabra.value
+    for(let letra of texto) {
+    if (acentos.includes(letra)) {
+        return true;
+    }
+    }
+    return false;
 }
 
 
